@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:id="@+id/root"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:liftOnScroll="true">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/my_toolbar"
+            android:background="#101010"
+            android:layout_width="match_parent"
+            app:title="Edvora"
+            app:titleTextAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+            app:menu="@menu/top_app_bar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_height="?attr/actionBarSize"/>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="86dp"
+        >
+        <TextView
+            android:id="@+id/Rides"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ABABAB"
+            android:text="@string/rides"
+            android:textFontWeight="700"
+            android:lineHeight="14.52sp"
+            android:textStyle="normal"
+
+            />
+        <TextView
+            android:id="@+id/Nearest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nearest"
+            />
+        <TextView
+            android:id="@+id/Upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upcoming_4"
+            />
+        <TextView
+            android:id="@+id/Past"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/past_2"
+            />
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:src="@drawable/ic_baseline_filter_list_24"
+            />
+        <TextView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filters"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="350dp"
+        android:layout_height="729dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        tools:listitem="@layout/item_layout" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

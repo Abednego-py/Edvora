@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="430dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:backgroundTint="#171717"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="266dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/map2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/cityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:textSize="12sp"
+                android:lineHeight="14.52sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717"
+                android:text="City Name"/>
+            <TextView
+                android:id="@+id/stateName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="90dp"
+                android:textSize="12sp"
+                android:lineHeight="14.52sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717"
+                android:text="State Name"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            >
+            <TextView
+                android:id="@+id/ride"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:textSize="18sp"
+                android:lineHeight="21.78sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717"
+                android:text="Ride Id : "/>
+            <TextView
+                android:id="@+id/rideId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:lineHeight="21.78sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            >
+            <TextView
+                android:id="@+id/station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:textSize="18sp"
+                android:lineHeight="21.78sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717"
+                android:text="Origin Station : "/>
+            <TextView
+                android:id="@+id/StationVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:lineHeight="21.78sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            >
+            <TextView
+                android:id="@+id/station_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:textSize="18sp"
+                android:lineHeight="21.78sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717"
+                android:text="station_path : "/>
+            <TextView
+                android:id="@+id/station_pathVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:lineHeight="21.78sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            >
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:textSize="18sp"
+                android:lineHeight="21.78sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717"
+                android:text="Date : "/>
+            <TextView
+                android:id="@+id/dateVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:lineHeight="21.78sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            >
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="40dp"
+                android:textSize="18sp"
+                android:lineHeight="21.78sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:backgroundTint="#171717"
+                android:text="Distance : " />
+            <TextView
+                android:id="@+id/distanceVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:lineHeight="21.78sp"
+                android:textFontWeight="500"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:text="0"
+                android:backgroundTint="#171717" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

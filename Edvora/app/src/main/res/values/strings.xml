@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Edvora</string>
+    <string name="dhruv_singh">Dhruv Singh</string>
+    <string name="profile">profile</string>
+    <string name="nearest">Nearest</string>
+    <string name="upcoming_4">Upcoming(4)</string>
+    <string name="past_2">Past(2)</string>
+    <string name="rides">Rides :</string>
+</resources>
